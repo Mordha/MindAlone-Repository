@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Departments.unity
+    path: Assets/Scenes/Albert Department.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Departments.unity
+    guid: d0dda655da0a6d640beedd95aeef2e68
   m_configObjects: {}

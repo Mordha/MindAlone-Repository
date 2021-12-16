@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Departments.unity
+- path: Assets/Scenes/Albert Department.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

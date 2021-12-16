@@ -52,7 +52,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\_Scripts\Player\PlayerMovement.cs" />
+     <Compile Include="Assets\_Scripts\_Player\PlayerMovement.cs" />
+     <Compile Include="Assets\_Scripts\Other\ChangeScene.cs" />
+     <Compile Include="Assets\_Scripts\_Player\Inventario.cs" />
+     <Compile Include="Assets\_Scripts\_Player\InventoryWeapons.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -685,6 +688,12 @@
  </Reference>
  <Reference Include="Unity.2D.IK.Runtime">
  <HintPath>C:/Users/Carlos/Documents/Tercer juego - Psicosis/MindAlone-Repository/Development/Mind_Alone_1.0/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Cinemachine">
+ <HintPath>C:/Users/Carlos/Documents/Tercer juego - Psicosis/MindAlone-Repository/Development/Mind_Alone_1.0/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ </Reference>
+ <Reference Include="com.unity.cinemachine.editor">
+ <HintPath>C:/Users/Carlos/Documents/Tercer juego - Psicosis/MindAlone-Repository/Development/Mind_Alone_1.0/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Triangle.Runtime">
  <HintPath>C:/Users/Carlos/Documents/Tercer juego - Psicosis/MindAlone-Repository/Development/Mind_Alone_1.0/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
