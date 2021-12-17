@@ -52,10 +52,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\_Scripts\_Player\PlayerMovement.cs" />
-     <Compile Include="Assets\_Scripts\Other\ChangeScene.cs" />
+     <Compile Include="Assets\_Scripts\_Player\HealthManager.cs" />
      <Compile Include="Assets\_Scripts\_Player\Inventario.cs" />
      <Compile Include="Assets\_Scripts\_Player\InventoryWeapons.cs" />
+     <Compile Include="Assets\_Scripts\_Player\PlayerMovement.cs" />
+     <Compile Include="Assets\_Scripts\Other\ChangeScene.cs" />
+     <Compile Include="Assets\_Scripts\Enemies\DamagePlayer.cs" />
+     <Compile Include="Assets\_Scripts\_Player\AnxietyManager.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

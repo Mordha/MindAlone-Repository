@@ -1,9 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
-using Object = System.Object;
+
 
 public class Inventario : MonoBehaviour
 {
@@ -12,7 +13,8 @@ public class Inventario : MonoBehaviour
     public bool actInv;
     public GameObject selector;
     public int id;
-
+    public string itemName;
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Objects"))
@@ -26,6 +28,7 @@ public class Inventario : MonoBehaviour
                     break;
                 }
             }
+            
             Destroy(other.gameObject);
         } 
     }
@@ -45,7 +48,28 @@ public class Inventario : MonoBehaviour
         selector.transform.position = container[id].transform.position;
     }
 
-    // Start is called before the first frame update
+    public void UseItem()
+    {
+        if (itemName == "potion1" && Input.GetKeyDown(KeyCode.I) && HealthManager.currentHealth < 100)
+        {
+            HealthManager.currentHealth += 10;
+            container[id].GetComponent<Image>().enabled = false;
+        }
+    }
+
+    public void ItemName()
+    {
+        if (container[id].GetComponent<Image>().enabled == false)
+        {
+            itemName = "null";
+        }
+        else
+        {
+            itemName = container[id].GetComponent<Image>().sprite.name;
+        }
+        
+    }
+   // Start is called before the first frame update
     void Start()
     {
         
@@ -69,6 +93,9 @@ public class Inventario : MonoBehaviour
         {
             actInv = !actInv;
         }*/
+        ItemName();
         Navegar();
+        UseItem();
+        
     }
 }

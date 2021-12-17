@@ -8,9 +8,14 @@
       <e p="Assets" t="Include">
         <e p="_Scripts" t="Include">
           <e p="_Player" t="Include">
+            <e p="AnxietyManager.cs" t="Include" />
+            <e p="HealthManager.cs" t="Include" />
             <e p="Inventario.cs" t="Include" />
             <e p="InventoryWeapons.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
+          </e>
+          <e p="Enemies" t="Include">
+            <e p="DamagePlayer.cs" t="Include" />
           </e>
           <e p="Other" t="Include">
             <e p="ChangeScene.cs" t="Include" />
