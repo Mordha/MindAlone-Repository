@@ -53,12 +53,19 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\_Scripts\_Player\HealthManager.cs" />
-     <Compile Include="Assets\_Scripts\_Player\Inventario.cs" />
-     <Compile Include="Assets\_Scripts\_Player\InventoryWeapons.cs" />
-     <Compile Include="Assets\_Scripts\_Player\PlayerMovement.cs" />
-     <Compile Include="Assets\_Scripts\Other\ChangeScene.cs" />
+     <Compile Include="Assets\_Scripts\Other\DiialogueManager.cs" />
      <Compile Include="Assets\_Scripts\Enemies\DamagePlayer.cs" />
      <Compile Include="Assets\_Scripts\_Player\AnxietyManager.cs" />
+     <Compile Include="Assets\_Scripts\_Player\CharacterMovement.cs" />
+     <Compile Include="Assets\_Scripts\Other\BulletsInformation.cs" />
+     <Compile Include="Assets\_Scripts\_Player\Inventario.cs" />
+     <Compile Include="Assets\_Scripts\Other\UIBullets.cs" />
+     <Compile Include="Assets\_Scripts\Other\NpcDialogue.cs" />
+     <Compile Include="Assets\_Scripts\Enemies\EnemyStats.cs" />
+     <Compile Include="Assets\_Scripts\_Player\InventoryWeapons.cs" />
+     <Compile Include="Assets\_Scripts\_Player\Bullet.cs" />
+     <Compile Include="Assets\_Scripts\_Player\PlayerMovement.cs" />
+     <Compile Include="Assets\_Scripts\Other\ChangeScene.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

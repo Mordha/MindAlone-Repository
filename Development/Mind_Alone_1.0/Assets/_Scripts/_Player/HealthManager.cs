@@ -51,7 +51,7 @@ public class HealthManager : MonoBehaviour
                 flashActive = false;
                 GetComponent<CapsuleCollider2D>().enabled = true;
                 GetComponent<Rigidbody2D>().gravityScale = 1;
-                GetComponent<PlayerMovement>().canMove = true;
+                GetComponent<CharacterMovement>().canMove = true;
             }
         }
         
@@ -59,22 +59,26 @@ public class HealthManager : MonoBehaviour
 
     public void DamageCharacter(int damage)
     {
-        currentHealth -= damage;
-        if (currentHealth <= 0)
+        if (!GetComponent<CharacterMovement>().isDashing)
         {
-            gameObject.SetActive(false);
-            HealthBar.value = 0;
-        }
+            currentHealth -= damage;
+            if (currentHealth <= 0)
+            {
+                gameObject.SetActive(false);
+                HealthBar.value = 0;
+            }
 
-        if (flashLenght > 0)
-        {
-            GetComponent<CapsuleCollider2D>().enabled = false;
-            GetComponent<Rigidbody2D>().gravityScale = 0;
-            GetComponent<PlayerMovement>().canMove = false;
-            flashActive = true;
-            flashCounter = flashLenght;
-            transform.Translate(Vector3.right * knockback * Time.deltaTime, Space.World);
+            if (flashLenght > 0)
+            {
+                GetComponent<CapsuleCollider2D>().enabled = false;
+                GetComponent<Rigidbody2D>().gravityScale = 0;
+                GetComponent<CharacterMovement>().canMove = false;
+                flashActive = true;
+                flashCounter = flashLenght;
+                transform.Translate(Vector3.right * knockback * Time.deltaTime, Space.World);
+            }    
         }
+        
     }
 
     void ToogleColor(bool visible)

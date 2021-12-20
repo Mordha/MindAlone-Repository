@@ -30,7 +30,7 @@ public class Inventario : MonoBehaviour
             }
             
             Destroy(other.gameObject);
-        } 
+        }
     }
 
     public void Navegar()

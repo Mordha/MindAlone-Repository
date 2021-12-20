@@ -9,6 +9,8 @@
         <e p="_Scripts" t="Include">
           <e p="_Player" t="Include">
             <e p="AnxietyManager.cs" t="Include" />
+            <e p="Bullet.cs" t="Include" />
+            <e p="CharacterMovement.cs" t="Include" />
             <e p="HealthManager.cs" t="Include" />
             <e p="Inventario.cs" t="Include" />
             <e p="InventoryWeapons.cs" t="Include" />
@@ -16,9 +18,14 @@
           </e>
           <e p="Enemies" t="Include">
             <e p="DamagePlayer.cs" t="Include" />
+            <e p="EnemyStats.cs" t="Include" />
           </e>
           <e p="Other" t="Include">
+            <e p="BulletsInformation.cs" t="Include" />
             <e p="ChangeScene.cs" t="Include" />
+            <e p="DiialogueManager.cs" t="Include" />
+            <e p="NpcDialogue.cs" t="Include" />
+            <e p="UIBullets.cs" t="Include" />
           </e>
         </e>
       </e>

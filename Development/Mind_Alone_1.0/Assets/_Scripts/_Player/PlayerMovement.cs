@@ -11,6 +11,9 @@ public class PlayerMovement : MonoBehaviour
     
     private bool facingRight;
     [SerializeField] private bool hasGun;
+    
+    public GameObject shootingPoint;
+    
 
  
     private void Start()
@@ -61,14 +64,6 @@ public class PlayerMovement : MonoBehaviour
         facingRight = !facingRight;
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
-        transform.localScale = theScale;
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Respawn"))
-        {
-            Debug.Log("Holi");
-        }
+        transform.localScale = theScale;       
     }
 }
